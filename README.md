@@ -28,6 +28,11 @@
    </p>
 </p>
 
+## Changes on this fork
+The forked sample uses client side login buttons, its own db and multiple providers on the NextJS app.
+This fork makes use of an OAuth2 server, in this case Duende IdentityServer, which is automatically chosen when logging in, so the login, logout and register functionality resides on the pages of the IP (IdentityProvider)
+This way, NextJS can be used as a BFF to forward requests to backend apis, using cookie and session authentication, which is more secure than using JWT on the client.
+
 ## Overview
 
 NextAuth.js is a complete open-source authentication solution.
